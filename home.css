@@ -12,14 +12,8 @@
   background-image: linear-gradient(90deg, rgb(20, 62, 109) 0.00%,rgba(11, 33, 59, 0.75) 100.00%),url("public/playground_assets/bg-1500w.jpg");
 }
 .home-container1 {
-<<<<<<< HEAD
   width: 250px;
   height: 400px;
-=======
-  flex: 0 0 auto;
-  width: 412px;
-  height: 412px;
->>>>>>> a14dee137e9bcf6c10f10fd212a180907058c755
   display: flex;
   box-shadow: 5px 5px 10px 0px #ffffff;
   align-items: center;
