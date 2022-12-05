@@ -1,6 +1,6 @@
 /*
-*   Author: beshleyua
-*   Author URL: http://themeforest.net/user/beshleyua
+*   Author: bslthemes
+*   Author URL: http://themeforest.net/user/bslthemes
 */
 
 ( function( $ ) {
@@ -294,19 +294,20 @@ $(function() {
 		return false;
 	});
 
-	/*
+  /*
 		Typed
 	*/
 
-	$('.subtitle.subtitle-typed').each(function(){
-		var subtitleContainer = $(this);
-
-		subtitleContainer.typed({
-			stringsElement: subtitleContainer.find('.typing-title'),
-			backDelay: 3500, /* Delay in text change */
-			typeSpeed: 0, /* Typing speed */
-			loop: true
-		});
+	$('.r-typed').each(function(){
+    var $this = $(this)[0];
+    var $string = $(this).prev('.typing-title')[0];
+    var typed = new Typed($this, {
+		stringsElement: $string,
+		backDelay: 3500,
+		typeSpeed: 80,
+		backSpeed: 20,
+		loop: true
+    });
 	});
 
 	/*
